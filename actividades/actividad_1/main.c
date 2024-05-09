@@ -47,8 +47,9 @@ void display_temp(float temperatura) {
   // Armo string con temperatura
   sprintf(str, "Temp=%.2f C", temperatura);
   // Limpio display (si lo hubiese)
-
+  lcd_clear();
   // Muestro (printf o lcd_string)
+  lcd_string(str);
 
 }
 
